@@ -131,7 +131,7 @@ def main():
             parser.exit("Error: SyntaxError...Check help for usage of commands.")
 
     elif args.command == "help" or not args.command:
-        msg = "Usage :-\n$ ./task add 2 \"hello world\"  # Add a new item with priority 2 and text \"hello world\" to the list\n$ ./task ls                   # Show incomplete priority list items sorted by priority in ascending order\n$ ./task del INDEX            # Delete the incomplete item with the given index\n$ ./task done INDEX           # Mark the incomplete item with the given index as complete\n$ ./task help                 # Show usage\n$ ./task report               # Statistics"
+        msg = "Usage :-\n$ ./task add 2 \"hello world\"  	# Add a new item with priority 2 and text \"hello world\" to the list\n$ ./task ls                   		# Show incomplete priority list items sorted by priority in ascending order\n$ ./task del INDEX            		# Delete the incomplete item with the given index\n$ ./task done INDEX           		# Mark the incomplete item with the given index as complete\n$ ./task change \"hello world\" 5  	# Change the priority of an existing task \"hello world\" to priority 5\n$ ./task help                 		# Show usage\n$ ./task report               		# Statistics"
         print(msg)
 
     elif args.command == "report":
